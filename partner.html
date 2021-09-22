@@ -23,31 +23,7 @@
     <!-- // arabic -->
     <title>Partner</title>
     <style> </style>
-      <script>
-        const conter = document.getElementById("Counter");
 
-        window.onscroll = function (ev) {
-            if ((window.innerHeight + window.scrollY) >= conter.offsetTop) {
-                const counters = document.querySelectorAll('.counter__number');
-                const speed = 600;
-                counters.forEach(counter => {
-                    const animate = () => {
-                        const value = +counter.getAttribute('value');
-                        const data = +counter.innerText;
-                        const time = value / speed;
-                        if (data < value) {
-                            counter.innerText = Math.ceil(data + time);
-                            setTimeout(animate, 1);
-                        } else {
-                            counter.innerText = value;
-                        }
-                    }
-                    animate();
-                });
-
-            }
-        };
-    </script>
 </head>
 
 <body>
@@ -563,8 +539,32 @@
     <script src="js/all.js"></script>
     <script src="js/main.js">   </script>
 
+    <script>
+        const conter = document.getElementById("Counter");
 
-  
+        window.onscroll = function (ev) {
+            if ((window.innerHeight + window.scrollY) >= conter.offsetTop) {
+                const counters = document.querySelectorAll('.counter__number');
+                const speed = 600;
+                counters.forEach(counter => {
+                    const animate = () => {
+                        const value = +counter.getAttribute('value');
+                        const data = +counter.innerText;
+                        const time = value / speed;
+                        if (data < value) {
+                            counter.innerText = Math.ceil(data + time);
+                            setTimeout(animate, 1);
+                        } else {
+                            counter.innerText = value;
+                        }
+                    }
+                    animate();
+                });
+
+            }
+        };
+    </script>
+
 
 
 
