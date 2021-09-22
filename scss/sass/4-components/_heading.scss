@@ -1,0 +1,16 @@
+.elementor-divider {
+  .elementor-divider-seprator {
+    width: 70px;
+    height: 5px;
+    background-color: $orange;
+    display: flex;
+    border-radius: 5px;
+  }
+  .seprator--center{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  
+}
