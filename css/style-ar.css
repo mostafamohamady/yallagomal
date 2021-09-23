@@ -255,6 +255,12 @@ ol {
   width: 150px;
 }
 
+@media (max-width: 991px) {
+  .partner footer a svg {
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .partner .new-costumer .logo-lang .logo {
     width: 120px;
