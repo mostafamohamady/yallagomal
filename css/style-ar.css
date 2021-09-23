@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 @font-face {
   font-family: "advertisingbold";
   src: url("../fonts/advertisingbold.ttf");
@@ -87,7 +87,7 @@ ol {
 }
 
 .partner .new-costumer .join-us .join-us__text h2 {
-  margin-top: 40px;
+  margin-top: 5.5rem;
   font-size: 3.5rem;
   font-weight: bold;
   color: #fff;
@@ -103,6 +103,7 @@ ol {
   color: #fff;
   font-size: 2.7rem;
   font-weight: bold;
+  margin-bottom: 1.8rem;
 }
 
 .partner .new-costumer .join-us .join-us__form form {
@@ -148,7 +149,7 @@ ol {
 }
 
 .partner .feature h3 {
-  padding-top: 30px;
+  padding-top: 80px;
   padding-bottom: 20px;
   text-align: center;
   font-size: 2rem;
@@ -254,10 +255,68 @@ ol {
   width: 150px;
 }
 
+@media (max-width: 768px) {
+  .partner .new-costumer .logo-lang .logo {
+    width: 120px;
+  }
+  .partner .new-costumer .logo-lang .lang-portal .lang,
+  .partner .new-costumer .logo-lang .lang-portal .portal {
+    font-size: 1rem;
+  }
+  .partner .new-costumer .join-us .join-us__text h2 {
+    font-size: 1.9rem;
+  }
+  .partner .new-costumer .join-us .join-us__text h5 {
+    font-size: 1.2rem;
+  }
+  .partner .new-costumer .join-us .join-us__form h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  .partner .feature h2 {
+    font-size: 1.9rem;
+  }
+  .partner .feature h3,
+  .partner .benfit h3,
+  .partner .about h3,
+  .partner .ready-join h3 {
+    font-size: 1.5rem;
+  }
+  .partner .counter .counter__box .counter__number {
+    font-size: 1.9rem;
+  }
+  .partner .counter .counter__box .text {
+    font-size: 1rem;
+  }
+  .counter .counter__row {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .partner .ready-join .btn-join {
+    font-size: 1.1rem;
+  }
+  .partner footer {
+    text-align: center;
+  }
+  .partner footer h4 {
+    margin-top: 1rem;
+  }
+  .partner footer a svg {
+    margin-top: 1rem;
+  }
+}
+
 body {
   direction: rtl;
-  font-family: "Markazi Text", serif;
+  font-family: "Cairo", sans-serif;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style-ar.css.map */

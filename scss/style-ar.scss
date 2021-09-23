@@ -1,9 +1,15 @@
 @import "style-en.scss";
 
-@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 
 body {
   direction: rtl;
-  font-family: "Markazi Text", serif;
+  font-family: "Cairo", sans-serif;
   font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
