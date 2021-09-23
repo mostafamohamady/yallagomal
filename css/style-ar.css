@@ -110,6 +110,7 @@ ol {
   background-color: #fff;
   border-radius: 5px;
   padding: 30px 20px;
+  opacity: 0.95;
 }
 
 .partner .new-costumer .join-us .join-us__form form p {
@@ -176,12 +177,20 @@ ol {
 }
 
 .partner .benfit .benfit__box {
-  padding: 10px 15px;
   border-bottom: 3px solid #ff5a00;
   -webkit-box-shadow: 0px 0px 3px 2px rgba(94, 94, 94, 0.75);
           box-shadow: 0px 0px 3px 2px rgba(94, 94, 94, 0.75);
   border-radius: 5px;
   margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.partner .benfit .benfit__box .benfit__img {
+  margin-bottom: 10px;
+}
+
+.partner .benfit .benfit__box .benfit__content {
+  padding: 10px 15px;
 }
 
 .partner .benfit .benfit__box h4 {
