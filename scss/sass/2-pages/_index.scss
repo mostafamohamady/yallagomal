@@ -1,0 +1,393 @@
+.index-ii {
+  background-color: $white;
+  .paner {
+    height: 100vh;
+    .swiper {
+      width: 100%;
+      height: 100%;
+      .paner__text {
+        h2 {
+          font-size: 2rem;
+          font-weight: 900;
+          color: $gray;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          margin-bottom: 2rem;
+        }
+        a {
+          text-decoration: none;
+          background-color: $orange2;
+          border-radius: 25px;
+          padding: 5px 25px;
+          color: $black;
+          font-weight: 500;
+          transition: color 0.3s ease-in-out;
+          &:hover {
+            color: $white;
+            transition: color 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: $ofgray;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .swiper-pagination {
+        .swiper-pagination-bullet-active {
+          background-color: $orange2;
+        }
+      }
+    }
+  }
+  // -------
+  .section-head {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    h3 {
+      margin: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+
+      color: $gray;
+      svg {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+  // -----
+  .sections {
+    padding-top: 50px;
+    .sections__box {
+      border-radius: 10px;
+      overflow: hidden;
+
+      a {
+        position: relative;
+        display: block;
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.303);
+          z-index: 9998;
+        }
+        p {
+          position: absolute;
+          color: $white;
+          z-index: 9999;
+          bottom: 0;
+          right: 0;
+          padding: 10px;
+          margin: 0;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  // -----
+  .offers {
+    padding-top: 50px;
+    .offers__box {
+      a {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.303);
+          z-index: 9998;
+        }
+        img {
+          width: 100%;
+        }
+        > span {
+          padding: 10px;
+          position: absolute;
+          z-index: 9999;
+          left: 10px;
+          top: 10px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          width: 35px;
+          height: 35px;
+
+          background-color: $gray;
+          svg {
+            width: 17px;
+            height: 17px;
+            path {
+              fill: $white;
+            }
+          }
+        }
+        p {
+          position: absolute;
+          color: $white;
+          z-index: 9999;
+          bottom: 0;
+          right: 0;
+          padding: 10px;
+          margin: 0;
+          font-size: 0.7rem;
+          span {
+            margin-inline-end: 10px;
+          }
+        }
+      }
+      h4 {
+        margin: 10px 0;
+        font-size: 1.2rem;
+      }
+      .merchant-rate {
+        display: flex;
+        justify-content: space-between;
+        span {
+          font-size: 0.8rem;
+        }
+        .rate {
+          display: flex;
+          align-items: center;
+          svg {
+            margin: 0 5px;
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+  // ------
+  .marchent {
+    padding-top: 50px;
+    .marchent__box {
+      a {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        display: block;
+        .overlay {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.303);
+          z-index: 9998;
+        }
+        > span {
+          padding: 10px;
+          position: absolute;
+          z-index: 9999;
+          left: 10px;
+          top: 10px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-self: center;
+          width: 35px;
+          height: 35px;
+
+          background-color: $gray;
+          svg {
+            width: 17px;
+            height: 17px;
+            path {
+              fill: $white;
+            }
+          }
+        }
+        .star-rate {
+          position: absolute;
+          right: 5px;
+          top: 14px;
+          z-index: 9999;
+          svg {
+            transform: rotate(214deg);
+            path {
+              fill: $orange2;
+            }
+          }
+        }
+      }
+      h4 {
+        margin: 10px 0;
+        font-size: 1.2rem;
+      }
+      .merchant-rate {
+        display: flex;
+        justify-content: space-between;
+        div {
+          :nth-child(1) {
+            border-inline-end: 1px solid $gray;
+            padding-inline-end: 10px;
+          }
+          :nth-child(2) {
+            padding-inline-start: 5px;
+          }
+        }
+        span {
+          font-size: 0.8rem;
+        }
+        .rate {
+          display: flex;
+          align-items: center;
+          svg {
+            margin: 0 5px;
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+  // ------
+  .ad {
+    padding-top: 60px;
+    .swiper {
+      .paner__img {
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .swiper-pagination {
+        position: relative;
+        margin-top: 10px;
+        .swiper-pagination-bullet-active {
+          background-color: $orange2;
+        }
+      }
+    }
+  }
+  //-------
+  .videos {
+    padding-top: 50px;
+
+    .swiper {
+      .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        .swiper-pagination-bullet-active {
+          background-color: $orange2;
+        }
+      }
+    }
+
+    .videos__box {
+      .marchent-name {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+          margin: 10px 0;
+          font-size: 1.2rem;
+        }
+        span {
+          font-size: 1rem;
+        }
+      }
+
+      .merchant-rate {
+        display: flex;
+        justify-content: space-between;
+        div {
+          :nth-child(1) {
+            border-inline-end: 1px solid $gray;
+            padding-inline-end: 10px;
+          }
+          :nth-child(2) {
+            padding-inline-start: 5px;
+          }
+        }
+        span {
+          font-size: 0.8rem;
+        }
+        .rate {
+          display: flex;
+          align-items: center;
+          svg {
+            margin: 0 5px;
+            width: 10px;
+            height: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  //------
+  .join-as {
+    padding-top: 90px;
+    .join-as__container {
+      background-color: $white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 3px 2px rgba(163, 163, 163, 0.75);
+
+      .join__text {
+        padding: 60px 30px;
+        h3 {
+          font-size: 3rem;
+          padding: 10px;
+        }
+        h5 {
+          font-size: 2rem;
+        }
+        .more {
+          background-color: $orange2;
+          text-decoration: none;
+          padding: 15px 50px;
+          border-radius: 10px;
+          font-size: 2rem;
+          display: inline-block;
+          margin-top: 40px;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  //------
+  .discover {
+    padding: 120px 0;
+    .discover__container {
+      .discover__text {
+        h3 {
+          padding-top: 20px;
+        }
+        h5 {
+          padding-top: 10px;
+          margin-bottom: 35px;
+        }
+      }
+      .discover__img {
+      }
+    }
+  }
+}

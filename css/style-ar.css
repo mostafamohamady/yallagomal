@@ -26,6 +26,492 @@ ol {
   padding-right: 0;
 }
 
+.index-ii {
+  background-color: #ffffff;
+}
+
+.index-ii .paner {
+  height: 100vh;
+}
+
+.index-ii .paner .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.index-ii .paner .swiper .paner__text h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #424648;
+  margin-bottom: 1.5rem;
+}
+
+.index-ii .paner .swiper .paner__text p {
+  margin-bottom: 2rem;
+}
+
+.index-ii .paner .swiper .paner__text a {
+  text-decoration: none;
+  background-color: #f4a814;
+  border-radius: 25px;
+  padding: 5px 25px;
+  color: #222;
+  font-weight: 500;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.index-ii .paner .swiper .paner__text a:hover {
+  color: #ffffff;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.index-ii .paner .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ecf9fd;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-ii .paner .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.index-ii .paner .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f4a814;
+}
+
+.index-ii .section-head {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 0;
+}
+
+.index-ii .section-head h3 {
+  margin: 0;
+}
+
+.index-ii .section-head a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #424648;
+}
+
+.index-ii .section-head a svg {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 14px;
+  height: 14px;
+}
+
+.index-ii .sections {
+  padding-top: 50px;
+}
+
+.index-ii .sections .sections__box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.index-ii .sections .sections__box a {
+  position: relative;
+  display: block;
+}
+
+.index-ii .sections .sections__box a .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.303);
+  z-index: 9998;
+}
+
+.index-ii .sections .sections__box a p {
+  position: absolute;
+  color: #ffffff;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.index-ii .offers {
+  padding-top: 50px;
+}
+
+.index-ii .offers .offers__box a {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.index-ii .offers .offers__box a .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.303);
+  z-index: 9998;
+}
+
+.index-ii .offers .offers__box a img {
+  width: 100%;
+}
+
+.index-ii .offers .offers__box a > span {
+  padding: 10px;
+  position: absolute;
+  z-index: 9999;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  width: 35px;
+  height: 35px;
+  background-color: #424648;
+}
+
+.index-ii .offers .offers__box a > span svg {
+  width: 17px;
+  height: 17px;
+}
+
+.index-ii .offers .offers__box a > span svg path {
+  fill: #ffffff;
+}
+
+.index-ii .offers .offers__box a p {
+  position: absolute;
+  color: #ffffff;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.index-ii .offers .offers__box a p span {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+
+.index-ii .offers .offers__box h4 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.index-ii .offers .offers__box .merchant-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-ii .offers .offers__box .merchant-rate span {
+  font-size: 0.8rem;
+}
+
+.index-ii .offers .offers__box .merchant-rate .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-ii .offers .offers__box .merchant-rate .rate svg {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.index-ii .marchent {
+  padding-top: 50px;
+}
+
+.index-ii .marchent .marchent__box a {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+
+.index-ii .marchent .marchent__box a .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.303);
+  z-index: 9998;
+}
+
+.index-ii .marchent .marchent__box a > span {
+  padding: 10px;
+  position: absolute;
+  z-index: 9999;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  width: 35px;
+  height: 35px;
+  background-color: #424648;
+}
+
+.index-ii .marchent .marchent__box a > span svg {
+  width: 17px;
+  height: 17px;
+}
+
+.index-ii .marchent .marchent__box a > span svg path {
+  fill: #ffffff;
+}
+
+.index-ii .marchent .marchent__box a .star-rate {
+  position: absolute;
+  right: 5px;
+  top: 14px;
+  z-index: 9999;
+}
+
+.index-ii .marchent .marchent__box a .star-rate svg {
+  -webkit-transform: rotate(214deg);
+          transform: rotate(214deg);
+}
+
+.index-ii .marchent .marchent__box a .star-rate svg path {
+  fill: #f4a814;
+}
+
+.index-ii .marchent .marchent__box h4 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.index-ii .marchent .marchent__box .merchant-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-ii .marchent .marchent__box .merchant-rate div :nth-child(1) {
+  -webkit-border-end: 1px solid #424648;
+          border-inline-end: 1px solid #424648;
+  -webkit-padding-end: 10px;
+          padding-inline-end: 10px;
+}
+
+.index-ii .marchent .marchent__box .merchant-rate div :nth-child(2) {
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+}
+
+.index-ii .marchent .marchent__box .merchant-rate span {
+  font-size: 0.8rem;
+}
+
+.index-ii .marchent .marchent__box .merchant-rate .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-ii .marchent .marchent__box .merchant-rate .rate svg {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.index-ii .ad {
+  padding-top: 60px;
+}
+
+.index-ii .ad .swiper .paner__img {
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.index-ii .ad .swiper .paner__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.index-ii .ad .swiper .swiper-pagination {
+  position: relative;
+  margin-top: 10px;
+}
+
+.index-ii .ad .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f4a814;
+}
+
+.index-ii .videos {
+  padding-top: 50px;
+}
+
+.index-ii .videos .swiper .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.index-ii .videos .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #f4a814;
+}
+
+.index-ii .videos .videos__box .marchent-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-ii .videos .videos__box .marchent-name h4 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.index-ii .videos .videos__box .marchent-name span {
+  font-size: 1rem;
+}
+
+.index-ii .videos .videos__box .merchant-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.index-ii .videos .videos__box .merchant-rate div :nth-child(1) {
+  -webkit-border-end: 1px solid #424648;
+          border-inline-end: 1px solid #424648;
+  -webkit-padding-end: 10px;
+          padding-inline-end: 10px;
+}
+
+.index-ii .videos .videos__box .merchant-rate div :nth-child(2) {
+  -webkit-padding-start: 5px;
+          padding-inline-start: 5px;
+}
+
+.index-ii .videos .videos__box .merchant-rate span {
+  font-size: 0.8rem;
+}
+
+.index-ii .videos .videos__box .merchant-rate .rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index-ii .videos .videos__box .merchant-rate .rate svg {
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.index-ii .join-as {
+  padding-top: 90px;
+}
+
+.index-ii .join-as .join-as__container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 3px 2px rgba(163, 163, 163, 0.75);
+          box-shadow: 0px 0px 3px 2px rgba(163, 163, 163, 0.75);
+}
+
+.index-ii .join-as .join-as__container .join__text {
+  padding: 60px 30px;
+}
+
+.index-ii .join-as .join-as__container .join__text h3 {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+.index-ii .join-as .join-as__container .join__text h5 {
+  font-size: 2rem;
+}
+
+.index-ii .join-as .join-as__container .join__text .more {
+  background-color: #f4a814;
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 10px;
+  font-size: 2rem;
+  display: inline-block;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.index-ii .discover {
+  padding: 120px 0;
+}
+
+.index-ii .discover .discover__container .discover__text h3 {
+  padding-top: 20px;
+}
+
+.index-ii .discover .discover__container .discover__text h5 {
+  padding-top: 10px;
+  margin-bottom: 35px;
+}
+
 .partner .new-costumer {
   padding: 20px 0;
   background-color: #ddd;
