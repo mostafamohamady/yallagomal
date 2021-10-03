@@ -181,6 +181,7 @@ ol {
 
 .index-ii .offers .offers__box a img {
   width: 100%;
+  min-height: 220px;
 }
 
 .index-ii .offers .offers__box a > span {
@@ -321,6 +322,10 @@ ol {
 
 .index-ii .marchent .marchent__box a .star-rate svg path {
   fill: #f4a814;
+}
+
+.index-ii .marchent .marchent__box a img {
+  min-height: 220px;
 }
 
 .index-ii .marchent .marchent__box h4 {
