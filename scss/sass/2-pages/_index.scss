@@ -76,7 +76,7 @@
   }
   // -----
   .sections {
-    padding-top: 50px;
+    padding-top: 90px;
     .sections__box {
       border-radius: 10px;
       overflow: hidden;
@@ -101,12 +101,24 @@
           margin: 0;
           font-size: 1.5rem;
         }
+        img {
+          min-height: 200px;
+        }
       }
     }
   }
   // -----
   .offers {
     padding-top: 50px;
+    .swiper {
+      .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        .swiper-pagination-bullet-active {
+          background-color: $orange2;
+        }
+      }
+    }
     .offers__box {
       a {
         border-radius: 10px;
@@ -185,6 +197,15 @@
   // ------
   .marchent {
     padding-top: 50px;
+    .swiper {
+      .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        .swiper-pagination-bullet-active {
+          background-color: $orange2;
+        }
+      }
+    }
     .marchent__box {
       a {
         border-radius: 10px;
@@ -228,7 +249,7 @@
           svg {
             transform: rotate(214deg);
             path {
-              fill: $orange2;
+              fill: $orange;
             }
           }
         }
@@ -355,20 +376,20 @@
       box-shadow: 0px 0px 3px 2px rgba(163, 163, 163, 0.75);
 
       .join__text {
-        padding: 60px 30px;
+        padding: 40px 30px;
         h3 {
-          font-size: 3rem;
+          font-size: 2.5rem;
           padding: 10px;
         }
         h5 {
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
         .more {
           background-color: $orange2;
           text-decoration: none;
           padding: 15px 50px;
           border-radius: 10px;
-          font-size: 2rem;
+          font-size: 1.3rem;
           display: inline-block;
           margin-top: 40px;
           color: #fff;

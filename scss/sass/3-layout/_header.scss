@@ -1,11 +1,104 @@
-
+.yalla-header {
+  .navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    box-shadow: 0 1px 3px #000;
+    background-color: #ff5a00;
+    color: $white;
+    .yalla-header__logo-box {
+      .navbar-brand {
+        img {
+          width: 120px;
+        }
+      }
+    }
+    .main-navbar {
+      li a,
+      .sign-nav li a {
+        color: $white;
+      }
+    }
+    .sign-nav {
+      form {
+        .search-container {
+          margin-top: 5px;
+          border-radius: 7px;
+          overflow: hidden;
+          position: relative;
+          .search-input {
+            width: 100%;
+            height: 35px;
+            padding: 2px 12px;
+            border-radius: 25px;
+            font-size: 14px;
+            border: 1px solid #a6a6a6;
+            &:focus-visible {
+              outline: none;
+            }
+          }
+          .search-button {
+            position: absolute;
+            background: transparent;
+            border: none;
+            left: 8px;
+            top: 50%;
+            cursor: pointer;
+            -webkit-transform: translateY(-43%);
+            transform: translateY(-43%);
+            svg {
+              path {
+                fill: rgb(131, 131, 131);
+              }
+            }
+          }
+        }
+      }
+      .nav-item {
+        a {
+          color: #fff;
+          svg {
+            path {
+              fill: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 992px) {
- 
 }
 
 @media (max-width: 991.98px) {
+  .yalla-header .navbar {
+    padding: 0.1rem 1rem;
+    .nav-box {
+      justify-content: center;
+    }
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: -4px;
+    top: 7px;
 
+    &:focus {
+      outline: none;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+    .navbar-toggler-icon {
+      background-color: $white;
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 6px 0;
+    }
+  }
 }
 
 @media (max-width: 768px) {
