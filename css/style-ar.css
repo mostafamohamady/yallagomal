@@ -182,6 +182,13 @@ ol {
   background-color: #ff5a00;
 }
 
+.index-ii .section-head--a a {
+  display: block;
+  text-align: end;
+  color: #424648;
+  padding-bottom: 15px;
+}
+
 .index-ii .section-head {
   padding: 20px 0;
   display: -webkit-box;
@@ -624,6 +631,10 @@ ol {
 .index-ii .discover .discover__container .discover__text h5 {
   padding-top: 10px;
   margin-bottom: 35px;
+}
+
+.index-ii .discover .discover__container .discover__text svg {
+  fill: #4B505A;
 }
 
 .partner .new-costumer {
