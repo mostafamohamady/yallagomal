@@ -92,6 +92,11 @@ ol {
   fill: #ffffff;
 }
 
+.yalla-header .search-mobile,
+.yalla-header .show-search {
+  display: none;
+}
+
 @media (max-width: 991.98px) {
   .yalla-header .navbar {
     padding: 0.1rem 1rem;
@@ -159,25 +164,25 @@ ol {
     visibility: visible;
     opacity: 1;
   }
-  .navbar-toggler {
+  .yalla-header .navbar-toggler {
     position: absolute;
     right: -4px;
     top: 7px;
   }
-  .navbar-toggler:focus {
+  .yalla-header .navbar-toggler:focus {
     outline: none;
   }
-  .navbar-toggler:focus-visible {
+  .yalla-header .navbar-toggler:focus-visible {
     outline: none;
   }
-  .navbar-toggler .navbar-toggler-icon {
+  .yalla-header .navbar-toggler .navbar-toggler-icon {
     background-color: #ffffff;
     display: block;
     width: 30px;
     height: 2px;
     margin: 6px 0;
   }
-  .search-mobile {
+  .yalla-header .search-mobile {
     display: none;
     position: absolute;
     left: 0px;
@@ -187,39 +192,40 @@ ol {
     z-index: 9999999;
     background-color: #fff;
   }
-  .search-mobile .search-container {
+  .yalla-header .search-mobile .search-container {
     margin-top: 15px;
   }
-  .search-mobile .search-container .search-input {
+  .yalla-header .search-mobile .search-container .search-input {
     width: 100%;
     padding: 0 20px;
   }
-  .search-mobile .search-container .search-input:focus-visible {
+  .yalla-header .search-mobile .search-container .search-input:focus-visible {
     outline: none;
   }
-  .search-mobile .search-container .search-input {
+  .yalla-header .search-mobile .search-container .search-input {
     border: none;
   }
-  .search-mobile .search-container .close-search {
+  .yalla-header .search-mobile .search-container .close-search {
     background-color: transparent;
     border: none;
     position: absolute;
-    left: 10px;
+    left: 20px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     z-index: 99999999;
   }
-  .search-mobile .search-container .close-search:focus {
+  .yalla-header .search-mobile .search-container .close-search:focus {
     outline: 1px dotted;
   }
-  .search-mobile .search-container .close-search svg path {
+  .yalla-header .search-mobile .search-container .close-search svg path {
     fill: #424648;
   }
-  .search-mobile--b {
+  .yalla-header .search-mobile--b {
     display: block;
   }
-  .show-search {
+  .yalla-header .show-search {
+    display: block;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -229,10 +235,10 @@ ol {
     background-color: transparent;
     border: none;
   }
-  .show-search:focus {
+  .yalla-header .show-search:focus {
     outline: 1px dotted;
   }
-  .show-search svg path {
+  .yalla-header .show-search svg path {
     fill: #ffffff;
   }
 }
