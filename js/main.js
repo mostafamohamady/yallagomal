@@ -5,7 +5,7 @@ window.onload = function () {
   var overlay = document.getElementById("overlay-screen");
   var btnShowSearch = document.getElementById("show-search");
   var searchMobile = document.getElementById("search-mobile");
-  var mCloseSearch = document.getElementById("m-close-search");
+  var btnCloseSearch = document.getElementById("m-close-search");
   btnClose.onclick = function () {
     btnToggle.click();
   };
@@ -20,7 +20,9 @@ window.onload = function () {
     searchMobile.classList.add("search-mobile--b");
     document.getElementById("search-mobile-input").focus();
   };
-  mCloseSearch.onclick = function () {};
+  btnCloseSearch.onclick = function () {
+    searchMobile.classList.remove("search-mobile--b");
+  };
 };
 
 /* header */
