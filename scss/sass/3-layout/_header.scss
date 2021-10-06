@@ -16,6 +16,9 @@
       }
     }
     .main-navbar {
+      .nav-item-close {
+        display: none;
+      }
       li a,
       .sign-nav li a {
         color: $white;
@@ -88,7 +91,7 @@
     .navbar-collapse {
       background-color: #fff;
       position: absolute;
-      top: 54px;
+      top: 0;
       right: -80%;
       color: $gray;
       width: 80%;
@@ -99,29 +102,49 @@
       overflow: scroll;
 
       .nav-item {
+        padding: 1px 5px;
         &:not(:last-of-type) {
-          border-bottom: 1px solid #000;
+          border-bottom: 1px solid #d1cece;
         }
 
         a {
           color: $black !important;
         }
       }
+      .nav-item-close {
+        display: block;
+        border-bottom: none !important;
+        padding: 15px 15px;
+
+        .btn-close {
+          border-radius: 50%;
+          width: 30px;
+          height: 30px;
+          border: 1px solid $black;
+          background-color: transparent;
+        }
+      }
     }
     .navbar-collapse.show {
       right: 0%;
       transition: all 0.3s ease-in-out;
-     
     }
     .over-lay {
       position: absolute;
-      top: 54px;
+      top: 0;
       right: 0;
       left: 0;
       width: 100%;
       height: 100vh;
       background-color: rgba(0, 0, 0, 0.385);
       z-index: 9999998;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+    .overlay-block {
+      visibility: visible;
+      opacity: 1;
     }
   }
   .navbar-toggler {

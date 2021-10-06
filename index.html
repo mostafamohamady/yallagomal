@@ -46,6 +46,11 @@
                     </div>
                     <div class="collapse navbar-collapse justify-content-between" id="yalla_gomla_nav">
                         <ul class="navbar-nav main-navbar">
+                            <li class="nav-item  nav-item-close">
+                                <button type="button" id="navbar-toggler-close" class="btn-close">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="https://www.yalla-gomla.com" data-kmt="1">الرئيسية</a>
                             </li>
@@ -89,9 +94,7 @@
                                         data-kmt="1"><i class="fas fa-book"></i> أدوات مكتبية</a>
                                 </div>
                             </li>
-                            <!-- <li class="nav-item ">
-                                <a class="nav-link" href="https://www.yalla-gomla.com/our-story" data-kmt="1">حكايتنا</a>
-                            </li> -->
+
                             <li class="nav-item ">
                                 <a class="nav-link" href="#">العروض </a>
                             </li>
@@ -130,10 +133,11 @@
                         </div>
 
                     </div>
-                    <div class="over-lay"></div>
+                    <div id="overlay-screen" class="over-lay"></div>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yalla_gomla_nav"
-                        aria-controls="yalla_gomla_nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button id="navbar-toggler-open" class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#yalla_gomla_nav" aria-controls="yalla_gomla_nav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         <span class="navbar-toggler-icon"></span>
                         <span class="navbar-toggler-icon"></span>
@@ -1166,6 +1170,11 @@
             },
 
         });
+
+            
+       
+
+
     </script>
 
 

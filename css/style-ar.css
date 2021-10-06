@@ -36,6 +36,10 @@ ol {
   width: 120px;
 }
 
+.yalla-header .navbar .main-navbar .nav-item-close {
+  display: none;
+}
+
 .yalla-header .navbar .main-navbar li a,
 .yalla-header .navbar .main-navbar .sign-nav li a {
   color: #ffffff;
@@ -101,7 +105,7 @@ ol {
   .yalla-header .navbar .navbar-collapse {
     background-color: #fff;
     position: absolute;
-    top: 54px;
+    top: 0;
     right: -80%;
     color: #424648;
     width: 80%;
@@ -112,11 +116,26 @@ ol {
     z-index: 9999999;
     overflow: scroll;
   }
+  .yalla-header .navbar .navbar-collapse .nav-item {
+    padding: 1px 5px;
+  }
   .yalla-header .navbar .navbar-collapse .nav-item:not(:last-of-type) {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #d1cece;
   }
   .yalla-header .navbar .navbar-collapse .nav-item a {
     color: #222 !important;
+  }
+  .yalla-header .navbar .navbar-collapse .nav-item-close {
+    display: block;
+    border-bottom: none !important;
+    padding: 15px 15px;
+  }
+  .yalla-header .navbar .navbar-collapse .nav-item-close .btn-close {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #222;
+    background-color: transparent;
   }
   .yalla-header .navbar .navbar-collapse.show {
     right: 0%;
@@ -125,13 +144,21 @@ ol {
   }
   .yalla-header .navbar .over-lay {
     position: absolute;
-    top: 54px;
+    top: 0;
     right: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.385);
     z-index: 9999998;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  .yalla-header .navbar .overlay-block {
+    visibility: visible;
+    opacity: 1;
   }
   .navbar-toggler {
     position: absolute;
