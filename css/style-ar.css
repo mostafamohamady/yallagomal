@@ -178,6 +178,33 @@ ol {
     height: 2px;
     margin: 6px 0;
   }
+  .search-mobile {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0px;
+    z-index: -1;
+  }
+  .search-mobile .search-container {
+    visibility: hidden;
+  }
+  .show-search {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    z-index: 999999999;
+  }
+  .show-search:focus {
+    outline: 1px dotted;
+  }
+  .show-search svg path {
+    fill: #ffffff;
+  }
 }
 
 .index-ii {
