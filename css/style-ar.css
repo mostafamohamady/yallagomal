@@ -76,6 +76,11 @@ ol {
   fill: #838383;
 }
 
+.yalla-header .navbar .sign-nav .nav-item .img-language {
+  width: 30px;
+  height: 30px;
+}
+
 .yalla-header .navbar .sign-nav .nav-item a {
   color: #fff;
 }
@@ -92,6 +97,41 @@ ol {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .yalla-header .navbar .navbar-collapse {
+    background-color: #fff;
+    position: absolute;
+    top: 54px;
+    right: -80%;
+    color: #424648;
+    width: 80%;
+    height: 100vh;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999999;
+    overflow: scroll;
+  }
+  .yalla-header .navbar .navbar-collapse .nav-item:not(:last-of-type) {
+    border-bottom: 1px solid #000;
+  }
+  .yalla-header .navbar .navbar-collapse .nav-item a {
+    color: #222 !important;
+  }
+  .yalla-header .navbar .navbar-collapse.show {
+    right: 0%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .yalla-header .navbar .over-lay {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.385);
+    z-index: 9999998;
   }
   .navbar-toggler {
     position: absolute;
