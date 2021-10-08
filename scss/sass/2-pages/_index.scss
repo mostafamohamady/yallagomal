@@ -84,6 +84,15 @@
   // -----
   .sections {
     padding-top: 90px;
+    .swiper {
+      .swiper-pagination {
+        position: relative;
+        margin-top: 30px;
+        .swiper-pagination-bullet-active {
+          background-color: $orange2;
+        }
+      }
+    }
     .sections__box {
       border-radius: 10px;
       overflow: hidden;
@@ -334,7 +343,7 @@
     .videos__box {
       .video-img {
         position: relative;
-        img{
+        img {
           width: 100%;
           min-height: 200px;
         }
@@ -596,7 +605,7 @@
 
 @media (max-width: 700px) {
   .index-ii .paner {
-    height: 80vh;
+    height: 60vh;
   }
   .index-ii .sections {
     padding-top: 30px;

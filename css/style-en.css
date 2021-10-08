@@ -385,6 +385,15 @@ ol {
   padding-top: 90px;
 }
 
+.index-ii .sections .swiper .swiper-pagination {
+  position: relative;
+  margin-top: 30px;
+}
+
+.index-ii .sections .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ff5a00;
+}
+
 .index-ii .sections .sections__box {
   border-radius: 10px;
   overflow: hidden;
@@ -932,7 +941,7 @@ ol {
 
 @media (max-width: 700px) {
   .index-ii .paner {
-    height: 80vh;
+    height: 60vh;
   }
   .index-ii .sections {
     padding-top: 30px;
