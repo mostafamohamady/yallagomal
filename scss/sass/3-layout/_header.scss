@@ -79,9 +79,33 @@
   .show-search {
     display: none;
   }
+  .navbar .sign-nav .nav-item .btn-lang {
+    img {
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+  }
 }
 
 @media (min-width: 992px) {
+  .yalla-header .navbar .sign-nav .nav-item .sign {
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    margin-left: 5px;
+    margin-right: 9px;
+    padding: 4px 8px;
+    margin-top: 5px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: $orange2;
+    top: 55px;
+    .dropdown-item {
+      &:hover {
+        color: $orange2;
+      }
+    }
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -108,12 +132,19 @@
 
         .nav-item {
           padding: 1px 5px;
+        
+          &.screen-search {
+            display: none;
+          }
           &:not(:last-of-type) {
             border-bottom: 1px solid #d1cece;
           }
 
           a {
             color: $black !important;
+          }
+          .btn-lang{
+            text-align: start;
           }
         }
         .nav-item-close {
