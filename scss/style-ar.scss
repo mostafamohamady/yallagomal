@@ -8,6 +8,18 @@ body {
   font-size: 16px;
 }
 
+// Offer page ar
+.form-group label:before{
+  margin-right: 0;
+  margin-left: 5px;
+}
+.offer-page .form-group input:checked + label:after {
+  right: 8px;
+  left: auto;
+}
+
+// End Offer page ar
+
 @media (max-width: 768px) {
   body {
     font-size: 14px;
