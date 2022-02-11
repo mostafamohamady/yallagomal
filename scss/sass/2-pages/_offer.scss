@@ -1,18 +1,11 @@
 .offer-page {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
   .offers {
     padding-top: 1px;
-    .swiper {
-      .swiper-pagination {
-        position: relative;
-        margin-top: 30px;
-        .swiper-pagination-bullet-active {
-          background-color: $orange2;
-        }
-      }
-    }
+    
     .offers__box {
+      margin-bottom: 15px;
       a {
         border-radius: 10px;
         overflow: hidden;

@@ -1,3 +1,42 @@
+.elementor-divider .elementor-divider-seprator {
+  width: 70px;
+  height: 5px;
+  background-color: #fda414;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+}
+.elementor-divider .seprator--center {
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-top: 100px;
+  display: inline-block;
+}
+.page-title .title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ff5a00;
+  color: #ffffff;
+  padding: 10px;
+  border-end-end-radius: 8px;
+  border-start-end-radius: 8px;
+}
+.page-title .title-content svg {
+  width: 35px;
+  height: 35px;
+}
+.page-title .title-content svg path, .page-title .title-content svg polygon {
+  fill: #ffffff !important;
+}
+.page-title .title-content .title-text {
+  margin: 0 15px;
+  font-size: 1.2rem;
+}
+
 @font-face {
   font-family: "advertisingbold";
   src: url("../fonts/advertisingbold.ttf");
@@ -1167,18 +1206,14 @@ ol {
   }
 }
 .offer-page {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 .offer-page .offers {
   padding-top: 1px;
 }
-.offer-page .offers .swiper .swiper-pagination {
-  position: relative;
-  margin-top: 30px;
-}
-.offer-page .offers .swiper .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ff5a00;
+.offer-page .offers .offers__box {
+  margin-bottom: 15px;
 }
 .offer-page .offers .offers__box a {
   border-radius: 10px;
