@@ -37,5 +37,71 @@
   }
 }
 
+.section__title--main {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  .section-title__circle {
+    border: 2px solid $orange2;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    padding: 6px;
+    width: 50px;
+    height: 50px;
+    & :first-child {
+      text-align: center;
+      font-size: 23px;
+      color: $gray2;
+    }
+  }
+  .section-title__text {
+    color: $gray2;
+    padding-inline-start: 10px;
+  }
+}
+
+.head-flag {
+  span {
+    background-color: $orange2;
+    border-radius: 0 15px 0 0;
+    padding: 4px 15px 0 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: $white;
+    position: relative;
+    .flag-icon {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: -10px;
+    }
+  }
+}
+
+.remaining-time {
+  .title {
+    margin-top: 2.2rem;
+    font-size: 1.3rem;
+  }
+  .time__detail {
+    background-color: $gray2;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    color:$orange2;
+    font-size: 1rem;
+    width: 100%;
+    &:nth-last-of-type(2){
+      border-radius: 0 15px 15px 0 ;
+    }
+    &:nth-last-of-type(3){
+      border-radius: 15px 0 0 15px ;
+    }
+  }
+}
+
+
+
+
 @media (max-width: 767.98px) {
 }

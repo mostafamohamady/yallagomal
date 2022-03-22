@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Yalla gomla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+
+    <!-- en -->
+    <link rel="stylesheet" href="css/style-en.css">
+    <!-- //en -->
+    <!-- arabic -->
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+        integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style-ar.css">
+    <!-- // arabic -->
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <!-- Demo styles -->
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="yalla-header">
+        <nav class="navbar navbar-expand-lg bg-gray2">
+            <div class="container-fluid">
+                <div class="w-100 nav-box d-flex flex-wrap ">
+                    <div class="yalla-header__logo-box">
+                        <a class="navbar-brand" href="https://www.yalla-gomla.com" data-kmt="1">
+                            <img loading="lazy" class="" src="./imges/logo2.png" alt="يلا جملة لوجو">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-between" id="yalla_gomla_nav">
+                        <ul class="navbar-nav main-navbar">
+                            <li class="nav-item  nav-item-close">
+                                <button type="button" id="navbar-toggler-close" class="btn-close">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="https://www.yalla-gomla.com" data-kmt="1">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" data-kmt="1">الأقسام
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/7-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9"
+                                        data-kmt="1">
+                                        <i class="fas fa-utensils">
+
+                                        </i> أدوات منزلية
+                                    </a>
+                                    <a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%D9%87%D8%A7"
+                                        data-kmt="1"><i class="fas fa-tshirt"></i> ملابس ومستلزماتها</a>
+                                    <a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/4-%D8%A7%D9%84%D8%B9%D8%A7%D8%A8-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84"
+                                        data-kmt="1"><i class="fas fa-gamepad"></i> العاب ومستلزمات الاطفال</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/6-%D9%87%D8%AF%D8%A7%D9%8A%D8%A7"
+                                        data-kmt="1"><i class="fas fa-gift"></i> هدايا</a><a class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/8-%D8%A7%D8%B6%D8%A7%D8%A1%D9%87-%D9%88%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA"
+                                        data-kmt="1"><i class="fas fa-lightbulb"></i> اضاءه وديكورات</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/1-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AD%D8%B1%D9%8A%D9%85%D9%8A"
+                                        data-kmt="1"><i class="far fa-gem"></i> اكسسوارات حريمي</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/14-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B1%D8%AC%D8%A7%D9%84%D9%8A"
+                                        data-kmt="1"><i class="fas fa-male"></i> اكسسوارات رجالي</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/5-%D9%85%D8%B3%D8%AA%D8%AD%D8%B6%D8%B1%D8%A7%D8%AA-%D8%AA%D8%AC%D9%85%D9%8A%D9%84-%D9%88%D8%B9%D8%B7%D9%88%D8%B1"
+                                        data-kmt="1"><i class="fas fa-paint-brush"></i> مستحضرات تجميل وعطور</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/3-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%AC%D9%84%D8%AF%D9%8A%D8%A9"
+                                        data-kmt="1"><i class="fas fa-shopping-bag"></i> منتجات جلدية</a><a
+                                        class="dropdown-item"
+                                        href="https://www.yalla-gomla.com/sections/12-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9"
+                                        data-kmt="1"><i class="fas fa-book"></i> أدوات مكتبية</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">العروض </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">انضم كشريك </a>
+                            </li>
+                        </ul>
+                        <div class="auth">
+                            <ul class="navbar-nav sign-nav">
+
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link btn btn-lang">English <img src="imges/us.png"
+                                            alt="ar-flag"></a>
+                                    <!-- <a href="#" class="nav-link btn btn-lang">Arabic <img src="imges/egy.png" alt="ar-flag"></a> -->
+
+                                </li>
+                                <li class="nav-item screen-search">
+                                    <form data-request-flash="" method="get" action="https://www.yalla-gomla.com/search"
+                                        data-kmt="1">
+                                        <div class="search-container">
+                                            <input class="search-input" aria-label="بتدور على ايه ؟" name="q"
+                                                type="text" placeholder="بتدور على ايه ؟">
+                                            <button class="search-button" aria-label="البحث" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link sign" data-toggle="modal" href="#login_modal" data-kmt="1">تسجيل
+                                        الدخول</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div id="overlay-screen" class="over-lay"></div>
+
+                    <button id="navbar-toggler-open" class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#yalla_gomla_nav" aria-controls="yalla_gomla_nav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div id="search-mobile" class="search-mobile">
+                        <form data-request-flash="" method="get" action="#" data-kmt="1">
+                            <div class="search-container">
+                                <input id="search-mobile-input" class="search-input" aria-label="بتدور على ايه ؟"
+                                    name="q" type="text" placeholder="بتدور على ايه ؟">
+                                <button id="m-close-search" class="close-search" type="button">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <button id="show-search" class="show-search" aria-label="البحث" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- member-profile -->
+        <div class="member-profile">
+            <div class="container">
+              <!-- member head -->
+              <div class="member-head">
+                <h2 class="text-center text-gray2 pt-4">
+                  الحجاز للأكسسوارات الحريمي
+                </h2>
+                <div class="member__profile-img text-center">
+                  <img class="rounded-circle img-fluid " src="imges/001.png" alt="member-profile-img" />
+                </div>
+              </div>
+              <!-- // member head -->
+            </div>
+            <!-- member carousel -->
+          
+            <div class="member-carousel mt-3">
+              <div class="swiper-container member-1 swiper-container--custom">
+                <div class="swiper-wrapper popup-gallery">
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/002.png" class="slide__popup"><i class="fas fa-plus "></i></a>
+                    <img class="img-fluid w-100" src="imges/002.png" alt="member-photo" />
+                  </div>
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/001.png" class="slide__popup"><i class="fas fa-plus"></i></a>
+                    <img class="img-fluid w-100" src="imges/001.png" alt="member-photo" />
+                  </div>
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/001.png" class="slide__popup"><i class="fas fa-plus"></i></a>
+                    <img class="img-fluid w-100" src="imges/001.png" alt="member-photo" />
+                  </div>
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/001.png" class="slide__popup"><i class="fas fa-plus"></i></a>
+                    <img class="img-fluid w-100" src="imges/001.png" alt="member-photo" />
+                  </div>
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/008.png" class="slide__popup"><i class="fas fa-plus"></i></a>
+                    <img class="img-fluid w-100" src="imges/008.png" alt="member-photo" />
+                  </div>
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/001.png" class="slide__popup"><i class="fas fa-plus"></i></a>
+                    <img class="img-fluid w-100" src="imges/001.png" alt="member-photo" />
+                  </div>
+                  <div class="swiper-slide swiper-slide--custom ">
+                    <a href="imges/001.png" class="slide__popup"><i class="fas fa-plus"></i></a>
+                    <img class="img-fluid w-100" src="imges/001.png" alt="member-photo" />
+                  </div>
+                
+                </div>
+                <div class="swiper-button-next--custom swiper-button-next "></div>
+                <div class="swiper-button-prev swiper-button-prev--custom"></div>
+              </div>
+           </div>
+           
+           
+            <!-- // member carousel -->
+            <div class="container-fluid">
+              <!-- member-details -->
+              <div class="member-details my-4">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="about my-4">
+                      <div class="about__head head-flag">
+                        <span>
+                        المصطفى للتوريد
+                          <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.49 53.71">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-932.51 -686)">
+                              <path id="Path_19" data-name="Path 19"
+                                d="M2469,554.475h-25.49l16.4-29.353-16.4-24.357H2469v53.71Z"
+                                transform="translate(-1511 185.235)" fill="#ff5a00"></path>
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="about__body">
+                        <p>
+                          ترتدي السيّدات الإكسسوارات لإبراز أسلوبها الخاص، ولإظهار
+                          شخصيّتها، وتحويل الأزياء الباهتة إلى أزياءٍ ملفتة للنّظر،
+                          فتحتاج إلى مجموعة جيدة من الحقائب، والأوشحة، والحلّي،
+                          والقبّعات، لإبراز مظهرها. ولاختيار الأزياء يجب مراعاة عدّة
+                          أمور، مثل الطّقس، والمناسبة، والأشخاص الذين سيقابلونها،
+                          وأنّ الأضداد تتجاذب، مثل إرتداء فستانٍ قصير مزخْرف وأقراطٍ
+                          كبيرة، وإضافة قطعة من الملابس لم تعتاد على ارتدائها
+                          للإلمام بالموضة، وإضافة ذوقها الخاص إلى الزّي، وأسلوبها
+                          الشّخصي، بالبدأ بقطعة ملابس تحبّها جدًا ثمّ تكملة بقيّة
+                          الزّي
+                        </p>
+                      </div>
+                    </div>
+                    <!-- //about -->
+                    <!-- attached -->
+                    <div class="attached my-4  p-4">
+                      <div class="accordion" id="accordionExample">
+
+                      
+                          <div class="card">
+                            <div class="card-header p-0" id="headingOne">
+                              <div class="btn btn-link--custom btn-link d-flex w-100 align-items-center px-0 " >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+                                  <g id="Group_54" data-name="Group 54" transform="translate(-1612 -1923)">
+                                    <g id="Ellipse_57" data-name="Ellipse 57" transform="translate(1612 1923)" fill="#fff"
+                                      stroke="#707070" stroke-width="1">
+                                      <circle cx="42.5" cy="42.5" r="42.5" stroke="none" />
+                                      <circle cx="42.5" cy="42.5" r="42" fill="none" />
+                                    </g>
+                                    <g id="Ellipse_63" data-name="Ellipse 63" transform="translate(1622 1933)" fill="none"
+                                      stroke="#fca31b" stroke-width="1">
+                                      <circle cx="33" cy="33" r="33" stroke="none" />
+                                      <circle cx="33" cy="33" r="32.5" fill="none" />
+                                    </g>
+                                    <path id="business-time-solid"
+                                      d="M31.379,14.171a9.11,9.11,0,1,0,9.11,9.11A9.105,9.105,0,0,0,31.379,14.171Zm4.049,9.508a.616.616,0,0,1-.614.614H30.982a.616.616,0,0,1-.614-.614V18.835a.616.616,0,0,1,.614-.614h.8a.616.616,0,0,1,.614.614v3.434h2.422a.616.616,0,0,1,.614.614ZM31.379,12.147c.342,0,.678.021,1.012.051V9.11a3.114,3.114,0,0,0-3.037-3.037H24.294V3.037A3.114,3.114,0,0,0,21.257,0H11.135A3.114,3.114,0,0,0,8.1,3.037V6.073H3.037A3.114,3.114,0,0,0,0,9.11v5.061H25A11.066,11.066,0,0,1,31.379,12.147ZM20.245,6.073h-8.1V4.049h8.1Zm.431,14.171H13.159a1.012,1.012,0,0,1-1.012-1.012V16.2H0v9.11a3.114,3.114,0,0,0,3.037,3.037H21.474a10.985,10.985,0,0,1-.8-8.1Z"
+                                      transform="translate(1634.511 1949.809)" fill="#aaa" />
+                                  </g>
+                                </svg>
+                                <div class="d-flex justify-content-between w-100 pl-4 ">
+                                  <h5>المنتجات</h5>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                           
+                              <div class="card-body">
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                                <div class="d-inline-block p-1 border border-secondary rounded mb-2 mr-2">
+                                  <span>اسم المنتج</span>
+                                </div>
+                              </div>
+                        
+                          </div>
+                        <div class="card">
+                          <div class="card-header p-0" id="headingOne">
+                            <div class="btn btn-link--custom btn-link d-flex w-100 align-items-center px-0 " >
+                              <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+                                <g id="Group_55" data-name="Group 55" transform="translate(-1610 -1791)">
+                                  <g id="Ellipse_56" data-name="Ellipse 56" transform="translate(1610 1791)" fill="#fff"
+                                    stroke="#707070" stroke-width="1">
+                                    <circle cx="42.5" cy="42.5" r="42.5" stroke="none" />
+                                    <circle cx="42.5" cy="42.5" r="42" fill="none" />
+                                  </g>
+                                  <g id="Ellipse_62" data-name="Ellipse 62" transform="translate(1619 1800)" fill="none"
+                                    stroke="#fca31b" stroke-width="1">
+                                    <circle cx="33" cy="33" r="33" stroke="none" />
+                                    <circle cx="33" cy="33" r="32.5" fill="none" />
+                                  </g>
+                                  <g id="Polygon_1" data-name="Polygon 1" transform="translate(1639 1847) rotate(-90)"
+                                    fill="none">
+                                    <path d="M13.5,0,27,23H0Z" stroke="none" />
+                                    <path
+                                      d="M 13.5 1.975507736206055 L 1.746494293212891 22 L 25.25350570678711 22 L 13.5 1.975507736206055 M 13.5 0 L 27 23 L 0 23 L 13.5 0 Z"
+                                      stroke="none" fill="#fca31b" />
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="d-flex justify-content-between w-100 pl-4 ">
+                                <h5>فديوهات <span>الحجاز</span></h5>
+                               
+                              </div>
+                            </div>
+                          </div>
+                         
+                            <div class="card-body">
+                              <div class="row">
+                                <div class=" col-md-6">
+                                  <iframe  width="100%" height="aute" src="https://www.youtube.com/embed/ucZl6vQ_8Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+                                
+                                        
+                                </div>
+                                <div class="col-md-6">
+                                  <iframe  width="100%" height="aute" src="https://www.youtube.com/embed/ucZl6vQ_8Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                  
+                                </div>
+                              </div>
+                            </div>
+                      
+                        </div>
+                          <div class="card">
+                            <div class="card-header p-0" id="headingOne">
+                              <div class="btn btn-link--custom btn-link d-flex w-100 align-items-center px-0 " >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85">
+                                  <g id="Group_57" data-name="Group 57" transform="translate(-1612 -2063)">
+                                    <g id="Ellipse_58" data-name="Ellipse 58" transform="translate(1612 2063)" fill="#fff"
+                                      stroke="#707070" stroke-width="1">
+                                      <circle cx="42.5" cy="42.5" r="42.5" stroke="none" />
+                                      <circle cx="42.5" cy="42.5" r="42" fill="none" />
+                                    </g>
+                                    <g id="Ellipse_64" data-name="Ellipse 64" transform="translate(1622 2072)" fill="none"
+                                      stroke="#fca31b" stroke-width="1">
+                                      <circle cx="33" cy="33" r="33" stroke="none" />
+                                      <circle cx="33" cy="33" r="32.5" fill="none" />
+                                    </g>
+                                    <g id="Group_56" data-name="Group 56">
+                                      <g id="Group_13" data-name="Group 13" transform="translate(3.5 -218.5)">
+                                        <line id="Line_41" data-name="Line 41" x1="40" transform="translate(1631.5 2311.5)"
+                                          fill="none" stroke="#707070" stroke-width="1" />
+                                        <line id="Line_42" data-name="Line 42" x1="40" transform="translate(1631.5 2323.5)"
+                                          fill="none" stroke="#707070" stroke-width="1" />
+                                        <line id="Line_43" data-name="Line 43" x1="40" transform="translate(1631.5 2335.5)"
+                                          fill="none" stroke="#707070" stroke-width="1" />
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                                <div class="d-flex justify-content-between w-100 pl-4 ">
+                                  <h5>خدمات اضافيه</h5>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                           
+                              <div class="card-body">
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> &nbsp; <span>نوع الخدمه</span></div>
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> &nbsp; <span>نوع الخدمه</span></div>
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> &nbsp; <span>نوع الخدمه</span></div>
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> &nbsp; <span>نوع الخدمه</span></div>
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> &nbsp; <span>نوع الخدمه</span></div>
+                                <div class="d-inline-block p-1  mb-2 mr-2"><i class="fa fa-tags"></i> &nbsp; <span>نوع الخدمه</span></div>
+                              </div>
+                        
+                          </div>
+                          <div class="card">
+                            <div class="card-header p-0" id="headingOne">
+                              <div class="btn btn-link--custom btn-link d-flex w-100 align-items-center px-0 " >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" viewBox="0 0 85 85"><g id="Group_62" data-name="Group 62" transform="translate(-1609 -2346)"><g id="Ellipse_60" data-name="Ellipse 60" transform="translate(1609 2346)" fill="#fff" stroke="#585858" stroke-width="1"><circle cx="42.5" cy="42.5" r="42.5" stroke="none"></circle><circle cx="42.5" cy="42.5" r="42" fill="none"></circle></g><path id="envelope-solid" d="M43.5,74.98a.521.521,0,0,1,.84.407V93.1a4.158,4.158,0,0,1-4.156,4.156H4.156A4.158,4.158,0,0,1,0,93.1V75.4a.518.518,0,0,1,.84-.407c1.94,1.507,4.511,3.42,13.344,9.837,1.827,1.334,4.91,4.139,7.984,4.122,3.091.026,6.235-2.84,7.993-4.122C38.993,78.409,41.556,76.487,43.5,74.98ZM22.168,86.168c2.009.035,4.9-2.529,6.356-3.585,11.491-8.339,12.365-9.066,15.015-11.144a2.072,2.072,0,0,0,.8-1.637V68.156A4.158,4.158,0,0,0,40.179,64H4.156A4.158,4.158,0,0,0,0,68.156V69.8a2.085,2.085,0,0,0,.8,1.637c2.65,2.07,3.524,2.806,15.015,11.144C17.267,83.639,20.159,86.2,22.168,86.168Z" transform="translate(1629.301 2308)" fill="#585858"></path></g></svg>
+                                <div class="d-flex justify-content-between w-100 pl-4 ">
+                                  <h5>خدمات اضافيه</h5>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                           
+                              <div class="card-body">
+                                <p>مواعيد العمل</p>
+                              </div>
+                        
+                          </div>
+                      
+
+
+                    
+                   
+                      </div>
+                    </div>
+                    <!-- // attached -->
+                  </div>
+                  <!-- // col -->
+                  <div class="col-md-3">
+
+                
+                    <div class="contact">
+                      <div class="live-clall">
+                        <p class="text"> للتواصل مع التاجر مباشره وطلب عرض الأسعار  </p>
+                        <a class="click-here" href="#" >اضغط هنا</a>
+                      </div>
+                      <div class="live-clall">
+                        <p class="text"> اضغط هنا لتحميل التطبيق والاستفاده بالعروض
+                        </p>
+                        <a class="click-here" href="#" >اضغط هنا للتحميل</a>
+                      </div>
+
+                      <div class="contact__head head-flag">
+                        <span class="text-left">
+                          <span class="p-0 pl-2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122.821"
+                              height="auto" viewBox="0 0 122.821 79.503">
+                              <defs>
+                                <filter id="Path_22" x="0" y="0" width="114.821" height="79.446" filterUnits="userSpaceOnUse">
+                                  <feOffset dy="3" input="SourceAlpha" />
+                                  <feGaussianBlur stdDeviation="3" result="blur" />
+                                  <feFlood flood-opacity="0.161" />
+                                  <feComposite operator="in" in2="blur" />
+                                  <feComposite in="SourceGraphic" />
+                                </filter>
+                                <filter id="Path_23" x="41" y="21" width="81.821" height="58.503"
+                                  filterUnits="userSpaceOnUse">
+                                  <feOffset dy="3" input="SourceAlpha" />
+                                  <feGaussianBlur stdDeviation="3" result="blur-2" />
+                                  <feFlood flood-opacity="0.161" />
+                                  <feComposite operator="in" in2="blur-2" />
+                                  <feComposite in="SourceGraphic" />
+                                </filter>
+                              </defs>
+                              <g id="Group_64" data-name="Group 64" transform="translate(-311.462 -1893.933)">
+                                <g id="Group_53" data-name="Group 53">
+                                  <g transform="matrix(1, 0, 0, 1, 311.46, 1893.93)" filter="url(#Path_22)">
+                                    <path id="Path_22-2" data-name="Path 22"
+                                      d="M3979.894,2017.379l19.195-13.436s-23.034-10.238-19.195-28.153,46.067-19.834,46.067-19.834,53.135-1.666,50.2,23.666-51.7,25.332-51.7,25.332h-14.3Z"
+                                      transform="translate(-3970.46 -1949.93)" fill="#fff" />
+                                  </g>
+                                </g>
+                                <g transform="matrix(1, 0, 0, 1, 311.46, 1893.93)" filter="url(#Path_23)">
+                                  <path id="Path_23-2" data-name="Path 23"
+                                    d="M4043,1996.436l-12.653-8.857s15.183-6.748,12.653-18.557-30.366-13.074-30.366-13.074-35.024-1.1-33.093,15.6,34.077,16.7,34.077,16.7h9.428Z"
+                                    transform="translate(-3929.46 -1928.93)" fill="#fff" />
+                                </g>
+                              </g>
+                            </svg>
+                          </span>
+                          <span class="px-0"> بيانات الاتصال</span>
+                          <svg class="flag-icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.49 53.71">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-932.51 -686)">
+                              <path id="Path_19" data-name="Path 19"
+                                d="M2469,554.475h-25.49l16.4-29.353-16.4-24.357H2469v53.71Z"
+                                transform="translate(-1511 185.235)" fill="#ff5a00"></path>
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="contact__body ">
+                        <h6>
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>الغردقة البحر الاحمر</span>
+                        </h6>
+                        <ul>
+                          <li>
+                            <i class="fas fa-phone"></i>
+                            <span> 01000000000</span>
+                          </li>
+                        
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- // col -->
+                </div>
+              </div>
+              <!-- // member-details -->
+               <div class="member-details my-4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="about my-4">
+                      <div class="about__head head-flag">
+                        <span>
+                          استفسارات العملاء
+
+                          <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.49 53.71">
+                            <g id="Group_4" data-name="Group 4" transform="translate(-932.51 -686)">
+                              <path id="Path_19" data-name="Path 19"
+                                d="M2469,554.475h-25.49l16.4-29.353-16.4-24.357H2469v53.71Z"
+                                transform="translate(-1511 185.235)" fill="#ff5a00"></path>
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="about__body">
+                        <p>
+                          استفسارات العملاء          
+                        </p>
+                      </div>
+                    </div>
+               
+                  
+                  </div>
+                  
+                </div>
+              </div>
+              <!--  client rating -->
+              <div class="client-rating  mt-4 mb-4">
+                <div class="row client-rating__row">
+                  <div class="col-md-9">
+                    <div class="head-flag">
+                      <span class="text-left">
+                        <span> تقيم العملاء</span>
+                        <svg class="flag-icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.49 53.71">
+                          <g id="Group_4" data-name="Group 4" transform="translate(-932.51 -686)">
+                            <path id="Path_19" data-name="Path 19"
+                              d="M2469,554.475h-25.49l16.4-29.353-16.4-24.357H2469v53.71Z"
+                              transform="translate(-1511 185.235)" fill="#ff5a00"></path>
+                          </g>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="client__posts">
+                      <!-- client-post -->
+                      <div class="client__post">
+                      <p> تقيــــــــــــــــم العمـــــــــــــــــــــلاء </p>
+                    
+                    </div>
+                    </div>
+            
+                </div>
+
+                      <!-- // col -->
+                      <div class="col-md-3">
+                        <div class="rate-container">
+                          <div class="rate-container__top">
+                            <div class="rate__score text-center">
+                              <div class="number">3.5</div>
+                              <div class="stars">
+                                <!-- full -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.082 67.078">
+                                  <path id="star-solid"
+                                    d="M51.781,2.321,43.227,19.664l-19.138,2.79a4.194,4.194,0,0,0-2.319,7.152L35.616,43.1l-3.275,19.06a4.189,4.189,0,0,0,6.078,4.415l17.121-9,17.121,9a4.193,4.193,0,0,0,6.078-4.415L75.465,43.1,89.311,29.607a4.194,4.194,0,0,0-2.319-7.152l-19.138-2.79L59.3,2.321a4.2,4.2,0,0,0-7.519,0Z"
+                                    transform="translate(-20.5 0.013)" fill="#fca31b"></path>
+                                </svg>
+                                <!-- //full -->
+                                <!-- full -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.082 67.078">
+                                  <path id="star-solid"
+                                    d="M51.781,2.321,43.227,19.664l-19.138,2.79a4.194,4.194,0,0,0-2.319,7.152L35.616,43.1l-3.275,19.06a4.189,4.189,0,0,0,6.078,4.415l17.121-9,17.121,9a4.193,4.193,0,0,0,6.078-4.415L75.465,43.1,89.311,29.607a4.194,4.194,0,0,0-2.319-7.152l-19.138-2.79L59.3,2.321a4.2,4.2,0,0,0-7.519,0Z"
+                                    transform="translate(-20.5 0.013)" fill="#fca31b"></path>
+                                </svg>
+                                <!-- //full -->
+                                <!-- full -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.082 67.078">
+                                  <path id="star-solid"
+                                    d="M51.781,2.321,43.227,19.664l-19.138,2.79a4.194,4.194,0,0,0-2.319,7.152L35.616,43.1l-3.275,19.06a4.189,4.189,0,0,0,6.078,4.415l17.121-9,17.121,9a4.193,4.193,0,0,0,6.078-4.415L75.465,43.1,89.311,29.607a4.194,4.194,0,0,0-2.319-7.152l-19.138-2.79L59.3,2.321a4.2,4.2,0,0,0-7.519,0Z"
+                                    transform="translate(-20.5 0.013)" fill="#fca31b"></path>
+                                </svg>
+                                <!-- //full -->
+                                <!-- half -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.065 26.808">
+                                  <path id="star-half-alt-solid"
+                                    d="M1.433,8.98,9.1,7.864,12.522.933a1.682,1.682,0,0,1,3.011,0l3.426,6.931,7.664,1.115a1.675,1.675,0,0,1,.929,2.858L22.008,17.23l1.312,7.617a1.68,1.68,0,0,1-1.655,1.961,1.655,1.655,0,0,1-.779-.2l-6.856-3.6-6.856,3.6a1.675,1.675,0,0,1-2.434-1.764L6.05,17.231.5,11.839A1.675,1.675,0,0,1,1.433,8.98Zm6.374,6.451.949.923-.224,1.3L7.51,23.6l5.347-2.806,1.172-.615,0-16.608L11.356,8.976l-.585,1.185-1.31.191-5.981.871Z"
+                                    transform="translate(0.004)" fill="#fca31b"></path>
+                                </svg>
+                                <!-- // half -->
+                                <!-- empty  -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.082 67.078">
+                                  <path id="star-regular"
+                                    d="M86.992,22.455l-19.138-2.79L59.3,2.321a4.2,4.2,0,0,0-7.519,0L43.227,19.664l-19.138,2.79a4.194,4.194,0,0,0-2.319,7.152L35.616,43.1l-3.275,19.06a4.189,4.189,0,0,0,6.078,4.415l17.121-9,17.121,9a4.193,4.193,0,0,0,6.078-4.415L75.465,43.1,89.311,29.607a4.194,4.194,0,0,0-2.319-7.152ZM68.719,40.9l3.1,18.13L55.541,50.474,39.258,59.028l3.1-18.13L29.185,28.061l18.208-2.646L55.541,8.91l8.148,16.505L81.9,28.061,68.719,40.9Z"
+                                    transform="translate(-20.5 0.013)" fill="#fca31b"></path>
+                                </svg>
+                                <!-- // empty -->
+                              </div>
+                            </div>
+                            <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"
+                              viewBox="0 0 370 370">
+                              <g id="Group_61" data-name="Group 61" transform="translate(-212 -3331)">
+                                <circle id="Ellipse_80" data-name="Ellipse 80" cx="185" cy="185" r="185"
+                                  transform="translate(212 3331)" fill="#ff5a00" />
+                                <g id="Ellipse_81" data-name="Ellipse 81" transform="translate(236 3355)" fill="none"
+                                  stroke="#fff" stroke-width="5">
+                                  <circle cx="161" cy="161" r="161" stroke="none" />
+                                  <circle cx="161" cy="161" r="158.5" fill="none" />
+                                </g>
+                                <circle id="Ellipse_82" data-name="Ellipse 82" cx="23.5" cy="23.5" r="23.5"
+                                  transform="translate(374 3649)" fill="#fff" />
+                                <circle id="Ellipse_83" data-name="Ellipse 83" cx="23.5" cy="23.5" r="23.5"
+                                  transform="translate(374 3335)" fill="#fff" />
+                              </g>
+                            </svg>
+                          </div>
+                          <div class="rate-container__bottom ">
+                            <button class="btn btn--custom">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 70.082 67.078">
+                                <path id="star-regular"
+                                  d="M86.992,22.455l-19.138-2.79L59.3,2.321a4.2,4.2,0,0,0-7.519,0L43.227,19.664l-19.138,2.79a4.194,4.194,0,0,0-2.319,7.152L35.616,43.1l-3.275,19.06a4.189,4.189,0,0,0,6.078,4.415l17.121-9,17.121,9a4.193,4.193,0,0,0,6.078-4.415L75.465,43.1,89.311,29.607a4.194,4.194,0,0,0-2.319-7.152ZM68.719,40.9l3.1,18.13L55.541,50.474,39.258,59.028l3.1-18.13L29.185,28.061l18.208-2.646L55.541,8.91l8.148,16.505L81.9,28.061,68.719,40.9Z"
+                                  transform="translate(-20.5 0.013)" fill="#fca31b"></path>
+                              </svg>
+                              <span>اكتب تعليقك</span>
+                            </button>
+                          </div>
+                        </div>
+                       </div>
+                       <!-- // col -->
+                <!-- // row -->
+              </div>
+              <!-- //client rating  -->
+            </div>
+            <!-- // container -->
+           </div>
+          </div>
+          <!-- //member-profile -->
+
+    <!-- footer -->
+    <footer class="  pt-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 pb-3 logo">
+                    <img loading="lazy" class="img-fluid"
+                        src="https://www.yalla-gomla.com/themes/ygomla/assets/img/logo2.png" alt="يلا جمله">
+                    <div class="mt-3">
+                        <h6>موقع يلا جمله أول موقع لتجارة الجملة في مصر</h6>
+                    </div>
+                    <ul class="footer-social">
+                        <li class=" mr-1 p-2"><a rel="nofollow noreferrer noopener" aria-label="فيسبوك" target="_blank"
+                                href="https://www.facebook.com/yallagomla/" data-kmt="1"><i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li class=" mr-1 p-2"><a rel="nofollow noreferrer noopener" aria-label="يوتيوب" target="_blank"
+                                href="https://www.youtube.com/channel/UCEKjsc5-wKHZfNQ1CZ40Osw?view_as=subscriber"
+                                data-kmt="1"><i class="fab fa-youtube"></i></a></li>
+                        <li class="  mr-1 p-2"><a rel="nofollow noreferrer noopener" target="_blank" aria-label="واتساب"
+                                href="https://web.whatsapp.com/send?phone=+201555080852&amp;text=%20%D9%8A%D9%84%D8%A7%20%D8%AC%D9%85%D9%84%D9%87"
+                                data-kmt="1"><i class="fab fa-whatsapp"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <ul class="footer-list">
+                        <li class="mb-2"><a aria-label="حكايتنا" href="https://www.yalla-gomla.com/our-story"
+                                data-kmt="1"> حكايتنا </a></li>
+                        <li class="mb-2"><a aria-label="ليه يلا جمله" href="https://www.yalla-gomla.com/why-us"
+                                data-kmt="1"> ليه يلا جمله </a></li>
+                        <li class="mb-2"><a aria-label="اضف تجارتك" href="https://www.yalla-gomla.com/join-us"
+                                data-kmt="1"> اضف تجارتك </a></li>
+                        <li class="mb-2"><a aria-label="أسئلة شائعة" href="https://www.yalla-gomla.com/faqs"
+                                data-kmt="1"> أسئلة شائعة </a></li>
+                        <li class="mb-2"><a aria-label="اتصل بنا" href="https://www.yalla-gomla.com/contact"
+                                data-kmt="1"> اتصل بنا </a></li>
+                        <li class="mb-2"><a aria-label="الاحكام والشروظ"
+                                href="https://www.yalla-gomla.com/terms-conditions" data-kmt="1"> الاحكام والشروظ </a>
+                        </li>
+                        <li class="mb-2"><a aria-label="سياسة الخصوصية"
+                                href="https://www.yalla-gomla.com/privacy-policy" data-kmt="1"> سياسة الخصوصية </a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h4 class="text-white pb-2">الأقسام : </h4>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="footer-list">
+                                <li class="mb-2"><a aria-label="أدوات منزلية"
+                                        href="https://www.yalla-gomla.com/sections/7-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9"
+                                        data-kmt="1"> أدوات منزلية </a></li>
+                                <li class="mb-2"><a aria-label="ملابس ومستلزماتها"
+                                        href="https://www.yalla-gomla.com/sections/9-%D9%85%D9%84%D8%A7%D8%A8%D8%B3-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA%D9%87%D8%A7"
+                                        data-kmt="1"> ملابس ومستلزماتها </a></li>
+                                <li class="mb-2"><a aria-label="العاب ومستلزمات الاطفال"
+                                        href="https://www.yalla-gomla.com/sections/4-%D8%A7%D9%84%D8%B9%D8%A7%D8%A8-%D9%88%D9%85%D8%B3%D8%AA%D9%84%D8%B2%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84"
+                                        data-kmt="1"> العاب ومستلزمات الاطفال </a></li>
+                                <li class="mb-2"><a aria-label="هدايا"
+                                        href="https://www.yalla-gomla.com/sections/6-%D9%87%D8%AF%D8%A7%D9%8A%D8%A7"
+                                        data-kmt="1"> هدايا </a></li>
+                                <li class="mb-2"><a aria-label="اضاءه وديكورات"
+                                        href="https://www.yalla-gomla.com/sections/8-%D8%A7%D8%B6%D8%A7%D8%A1%D9%87-%D9%88%D8%AF%D9%8A%D9%83%D9%88%D8%B1%D8%A7%D8%AA"
+                                        data-kmt="1"> اضاءه وديكورات </a></li>
+                                <li class="mb-2"><a aria-label="اكسسوارات حريمي"
+                                        href="https://www.yalla-gomla.com/sections/1-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AD%D8%B1%D9%8A%D9%85%D9%8A"
+                                        data-kmt="1"> اكسسوارات حريمي </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <ul class="footer-list">
+                                <li class="mb-2"><a aria-label="اكسسوارات رجالي"
+                                        href="https://www.yalla-gomla.com/sections/14-%D8%A7%D9%83%D8%B3%D8%B3%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D8%B1%D8%AC%D8%A7%D9%84%D9%8A"
+                                        data-kmt="1"> اكسسوارات رجالي </a></li>
+                                <li class="mb-2"><a aria-label="مستحضرات تجميل وعطور"
+                                        href="https://www.yalla-gomla.com/sections/5-%D9%85%D8%B3%D8%AA%D8%AD%D8%B6%D8%B1%D8%A7%D8%AA-%D8%AA%D8%AC%D9%85%D9%8A%D9%84-%D9%88%D8%B9%D8%B7%D9%88%D8%B1"
+                                        data-kmt="1"> مستحضرات تجميل وعطور </a></li>
+                                <li class="mb-2"><a aria-label="منتجات جلدية"
+                                        href="https://www.yalla-gomla.com/sections/3-%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%AC%D9%84%D8%AF%D9%8A%D8%A9"
+                                        data-kmt="1"> منتجات جلدية </a></li>
+                                <li class="mb-2"><a aria-label="أدوات مكتبية"
+                                        href="https://www.yalla-gomla.com/sections/12-%D8%A3%D8%AF%D9%88%D8%A7%D8%AA-%D9%85%D9%83%D8%AA%D8%A8%D9%8A%D8%A9"
+                                        data-kmt="1"> أدوات مكتبية </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-2">
+                    <ul class="footer-list">
+                        <li class="mb-2"><a target="_blank" aria-label="المدونة" href="https://www.yalla-gomla.com/blog"
+                                data-kmt="1"> المدونة </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy-right pt-4 pb-2"> جميع حقوق محفوظة ©<a aria-label="يلا جمله"
+                    href="https://www.yalla-gomla.com" data-kmt="1"> يلا جمله</a></div>
+        </div>
+    </footer>
+    <!--// footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/all.js"></script>
+    <script src="js/main.js">   </script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+   
+
+    <script>
+
+        var member1 = new Swiper(".member-1", {
+            slidesPerView: 4,
+
+            direction: getDirection(),
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+            },
+            on: {
+            resize: function () {
+                member1.changeDirection(getDirection());
+            }
+            },
+            breakpoints: {
+            "@0.00": {
+                slidesPerView: 1
+            },
+            "@0.75": {
+                slidesPerView: 1
+            },
+            "@1.00": {
+                slidesPerView: 2
+            },
+            "@1.50": {
+                slidesPerView: 4
+            }
+            }
+        });
+
+        function getDirection() {
+            var direction = window.innerWidth <= 760 ? "horizontal" : "horizontal";
+
+            return direction;
+        }
+
+        $(".popup-gallery").magnificPopup({
+            delegate: ".swiper-slide > a",
+            type: "image",
+            gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
